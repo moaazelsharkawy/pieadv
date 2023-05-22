@@ -122,3 +122,17 @@ padding-top: 50px;
   height: auto; /* تعديل ارتفاع الصورة بناءً على العرض المحدد */
   border-radius: 5px;
 }
+.not-found {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.not-found-title {
+  font-size: 36px;
+  color: #ff0000;
+}
+
+.not-found-message {
+  font-size: 18px;
+  color: #333333;
+}
