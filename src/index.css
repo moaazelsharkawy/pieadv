@@ -107,7 +107,10 @@ padding-top: 50px;
   color: white;
   font-size: 16px;
   cursor: pointer;
+  font-family: cairo;
+  font-weight: bold;
 }
+
 
 .button:hover {
   background-color: #c37932;

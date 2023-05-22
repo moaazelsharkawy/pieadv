@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/initial-logo.png";
-
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,107 +9,95 @@ const Header = () => {
       <img className="logo" src={Logo} alt="logo" />
         <ul className="flex">
           <li className="main-list">
-            <a className="main-link" href="#">
+            <Link className="main-Link" to="#">
               Advertise with us
-            </a>
+            </Link>
             <ul className="sub-ul">
               <li>
-                <a href="/product">product</a>
+                <Link to="/product">product</Link>
               </li>
               <li>
-                <a href="/company">company</a>
+                <Link to="/company">company</Link>
+                </li>
                 <li>
-                <a href="/service">service</a>
+                <Link to="/service">service</Link>
               </li>
-              </li>
+            
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="#">
+            <Link className="main-Link" to="#">
               services
-            </a>
+            </Link>
             <ul className="sub-ul">
               <li>
-                <a href="/tec">tec</a>
+                <Link to="/tec">tec</Link>
               </li>
               <li>
-                <a href="/online">online</a>
+                <Link to="/online">online</Link>
               </li>
               <li className="mini-projects">
-                <a href="#">others&nbsp; + </a>
+                <Link to="#">others&nbsp; + </Link>
                 <ul className="sub-sub-ul">
                   <li>
-                    <a href="#">project 1</a>
+                    <Link to="#">project 1</Link>
                   </li>
                   <li>
-                    <a href="#">project 2</a>
+                    <Link to="#">project 2</Link>
                   </li>
                   <li>
-                    <a href="#">project 3</a>
+                    <Link to="#">project 3</Link>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/price">
+            <Link className="main-Link" to="/price">
               price 🔥
-            </a>
+            </Link>
             
           </li>
         </ul>
       </header>
       <header className="show-when-mobile">
       <img className="logo" src={Logo} alt="logo" />
-        <h1>pieadv</h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
         </label>
         <input id="burger" type="checkbox" />
         <div className="show-on-click">
           <div className="main-div">
-            <label htmlFor="html">
-              HTML <i className="fas fa-plus" />
-            </label>
-            <input id="html" type="checkbox" />
-            <ul className="sub-div">
-              <li>
-                <a href="">Full Course</a>
-              </li>
-              <li>
-                <a href="">Crash Course</a>
-              </li>
-              <li>
-                <a href="">learn in 1h</a>
-              </li>
-            </ul>
+          <label htmlFor="html">
+  <Link to="/price">price 🔥</Link>
+</label>
           </div>
           <div className="main-div">
             <label htmlFor="css">
-              CSS <i className="fas fa-plus" />
+            services <i className="fas fa-plus" />
             </label>
             <input id="css" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">Full Course</a>
+                <Link to="/tec">tecnical</Link>
               </li>
               <li>
-                <a href="">CSS Examples</a>
+                <Link to="/online">online</Link>
               </li>
               <li>
                 <label className="mini-projects" htmlFor="mini">
-                  mini projects <i className="fas fa-plus" />
+                  More <i className="fas fa-plus" />
                 </label>
                 <input id="mini" type="checkbox" />
                 <ul className="sub-sub-div">
                   <li>
-                    <a href="">project 1</a>
+                    <Link to="">soon 1</Link>
                   </li>
                   <li>
-                    <a href="">project 2</a>
+                    <Link to="">soon 2</Link>
                   </li>
                   <li>
-                    <a href="">project 3</a>
+                    <Link href="">soon 3</Link>
                   </li>
                 </ul>
               </li>
@@ -117,12 +105,18 @@ const Header = () => {
           </div>
           <div className="main-div">
             <label htmlFor="js">
-              JavaScript <i className="fas fa-plus" />
+            Advertise with us <i className="fas fa-plus" />
             </label>
             <input id="js" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">coming soon🔥</a>
+                <Link to="/product">product</Link>
+              </li>
+              <li>
+                <Link to="/company">company</Link>
+              </li>
+              <li>
+                <Link to="/service">service</Link>
               </li>
             </ul>
           </div>
