@@ -1,34 +1,31 @@
 import React from "react";
 import Logo from "../assets/initial-logo.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
       <header className="hide-when-mobile">
-      <img className="logo" src={Logo} alt="logo" />
+        <img className="logo" src={Logo} alt="logo" />
         <ul className="flex">
           <li className="main-list">
-            <Link className="main-Link" to="#">
-              Advertise with us
-            </Link>
+            <div className="main-Link">Advertise with us</div>
+
             <ul className="sub-ul">
               <li>
                 <Link to="/product">product</Link>
               </li>
               <li>
                 <Link to="/company">company</Link>
-                </li>
-                <li>
+              </li>
+              <li>
                 <Link to="/service">service</Link>
               </li>
-            
             </ul>
           </li>
           <li className="main-list">
-            <Link className="main-Link" to="#">
-              services
-            </Link>
+            <div className="main-Link"> services</div>
             <ul className="sub-ul">
               <li>
                 <Link to="/tec">tec</Link>
@@ -37,7 +34,7 @@ const Header = () => {
                 <Link to="/online">online</Link>
               </li>
               <li className="mini-projects">
-                <Link to="#">others&nbsp; + </Link>
+                <NavLink to="#">others&nbsp; + </NavLink>
                 <ul className="sub-sub-ul">
                   <li>
                     <Link to="#">project 1</Link>
@@ -53,28 +50,27 @@ const Header = () => {
             </ul>
           </li>
           <li className="main-list">
-            <Link className="main-Link" to="/price">
+            <NavLink className="main-Link" to="/price">
               price 🔥
-            </Link>
-            
+            </NavLink>
           </li>
         </ul>
       </header>
       <header className="show-when-mobile">
-      <img className="logo" src={Logo} alt="logo" />
+        <img className="logo" src={Logo} alt="logo" />
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
         </label>
         <input id="burger" type="checkbox" />
         <div className="show-on-click">
           <div className="main-div">
-          <label htmlFor="html">
-  <Link to="/price">price 🔥</Link>
-</label>
+            <label htmlFor="html">
+              <Link to="/price">price 🔥</Link>
+            </label>
           </div>
           <div className="main-div">
             <label htmlFor="css">
-            services <i className="fas fa-plus" />
+              services <i className="fas fa-plus" />
             </label>
             <input id="css" type="checkbox" />
             <ul className="sub-div">
@@ -104,7 +100,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="main-div">
-            <label htmlFor="js">
+          <label htmlFor="js">
             Advertise with us <i className="fas fa-plus" />
             </label>
             <input id="js" type="checkbox" />

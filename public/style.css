@@ -184,3 +184,25 @@ footer{
 .show-when-mobile {
   display: none;
 }
+
+
+.main-Link {
+  text-decoration: none;
+  color: #f0e7e7;
+  font-weight: bold;
+  /* أي تنسيقات إضافية ترغب فيها */
+}
+
+
+.main-Link.active {
+  background-color: teal;
+  color: white;
+  border: 2px solid teal;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.main-Link.active:hover {
+  background-color: #006d6d;
+}

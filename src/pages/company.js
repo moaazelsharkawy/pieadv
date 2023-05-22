@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../comp/header";
+import Footer from '../comp/footer';
 
 const Company = () => {
   return (
@@ -9,11 +10,8 @@ const Company = () => {
       <main>company</main>
       
 
-      <footer>
-        Designed by pioneer
-        <span>🧡</span>
-      </footer>
-  </>
+    <Footer/>
+    </>
   );
 };
 
