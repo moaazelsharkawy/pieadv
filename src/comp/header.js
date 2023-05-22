@@ -14,10 +14,13 @@ const Header = () => {
             </a>
             <ul className="sub-ul">
               <li>
-                <a href="">product</a>
+                <a href="/product">product</a>
               </li>
               <li>
-                <a href="">company</a>
+                <a href="/company">company</a>
+                <li>
+                <a href="/service">service</a>
+              </li>
               </li>
             </ul>
           </li>
@@ -27,36 +30,32 @@ const Header = () => {
             </a>
             <ul className="sub-ul">
               <li>
-                <a href="">tec</a>
+                <a href="/tec">tec</a>
               </li>
               <li>
-                <a href="">online</a>
+                <a href="/online">online</a>
               </li>
               <li className="mini-projects">
-                <a href="">others&nbsp; + </a>
+                <a href="#">others&nbsp; + </a>
                 <ul className="sub-sub-ul">
                   <li>
-                    <a href="">project 1</a>
+                    <a href="#">project 1</a>
                   </li>
                   <li>
-                    <a href="">project 2</a>
+                    <a href="#">project 2</a>
                   </li>
                   <li>
-                    <a href="">project 3</a>
+                    <a href="#">project 3</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="#">
-              price{" "}
+            <a className="main-link" href="/price">
+              price 🔥
             </a>
-            <ul className="sub-ul sub-of-js">
-              <li>
-                <a href="">coming soon🔥</a>
-              </li>
-            </ul>
+            
           </li>
         </ul>
       </header>
