@@ -1,10 +1,12 @@
 import React from "react";
+import Logo from "../assets/initial-logo.png";
+
 
 const Header = () => {
   return (
     <div>
       <header className="hide-when-mobile">
-        <h1>piadvservice</h1>
+      <img className="logo" src={Logo} alt="logo" />
         <ul className="flex">
           <li className="main-list">
             <a className="main-link" href="#">
@@ -59,7 +61,8 @@ const Header = () => {
         </ul>
       </header>
       <header className="show-when-mobile">
-        <h1>Courses 4 Arab</h1>
+      <img className="logo" src={Logo} alt="logo" />
+        <h1>pieadv</h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
         </label>

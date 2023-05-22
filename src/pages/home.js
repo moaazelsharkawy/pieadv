@@ -5,7 +5,6 @@ import Footer from '../comp/footer';
 
 
 
-
 const Home = () => {
   return (
     <>

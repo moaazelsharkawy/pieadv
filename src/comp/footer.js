@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
         <footer>
-        Designed by pioneer
+        Designed by pioneer Moaazelsharkawy
         <span>🧡</span>
       </footer>
     </div>
