@@ -12,6 +12,8 @@ import Price from './pages/price';
 import Service from './pages/service';
 import Company from './pages/company';
 import Product from './pages/product';
+import Tec from './pages/tec';
+
 
 
 
@@ -49,6 +51,12 @@ const router = createBrowserRouter([
     element: <Product/>,
     errorElement: <Erorr404/>,
   },
+  {
+    path: "/tec",
+    element: <Tec/>,
+    errorElement: <Erorr404/>,
+  },
+
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
